@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(circle at top left, rgba(76, 77, 255, 0.15), transparent 45%),
+    radial-gradient(circle at top right, rgba(55, 57, 255, 0.05), transparent 55%),
+    #020617;
+}
+
+.glass-panel {
+  @apply rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wide text-white/80;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-brand-200 via-brand-400 to-purple-300 bg-clip-text text-transparent;
+}
+
+.card-grid {
+  @apply grid gap-5 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.section-title {
+  @apply text-xs uppercase tracking-[0.35em] text-white/50;
+}
